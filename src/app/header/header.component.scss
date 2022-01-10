@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: gainsboro;
+
+  .logo {
+    white-space: nowrap;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+
+    .menu-item {
+      margin: 0 0.5rem;
+      a {
+        color: gainsboro;
+      }
+    }
+
+  }
+}

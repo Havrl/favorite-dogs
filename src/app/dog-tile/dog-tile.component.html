@@ -1,0 +1,10 @@
+<article class="card" [ngClass]="{'is-favorite': isFavorite }">
+  <i *ngIf="isFavorite" class="fa fa-heart-o" aria-hidden="true"></i>
+  <img *ngIf="!imageSrc?.endsWith('.mp4')" [src]="imageSrc" [attr.width]="width">
+  <video *ngIf="imageSrc?.endsWith('.mp4')" [attr.width]="width" controls>
+    <source [src]="imageSrc" type="video/mp4">
+  </video>
+  <div class="text" *ngIf="type === 'home'">
+    <button (click)="addToFavorites()">Add to Favorites</button>
+  </div>
+</article>

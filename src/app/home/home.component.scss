@@ -1,0 +1,16 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    background-color: white;
+    border: 0;
+    padding: 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+      color: blue;
+    }
+  }
+}
