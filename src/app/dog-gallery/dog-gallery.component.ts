@@ -36,12 +36,10 @@ export class DogGalleryComponent implements OnInit, OnDestroy {
     }
 
     forkJoin(requestList).pipe(
-      // toArray(),
       take(1)
      ).subscribe(
       (data) => {
         this.randomImageUrls = data.map((item: any) => item.url);
-        console.log('random image urls', this.randomImageUrls);
       }
     );
   }
